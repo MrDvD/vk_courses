@@ -1,8 +1,7 @@
 FROM openjdk:11
 
-ENV HADOOP_VERSION=3.3.6
 RUN wget https://downloads.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz && \
-    tar -xzvf hadoop-$HADOOP_VERSION.tar.gz && \
+    tar -xzvf hadoop-3.3.6.tar.gz && \
     mv hadoop-3.3.6 /usr/local/hadoop && \
     rm hadoop-3.3.6.tar.gz
 
